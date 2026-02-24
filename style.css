@@ -72,6 +72,11 @@ body {
         text-align: center;
     }
 
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
     .nav-actions {
         flex-direction: column;
         width: 100%;
@@ -124,5 +129,6 @@ body {
     text-justify: inter-word;
 }
 }
+
 
 
