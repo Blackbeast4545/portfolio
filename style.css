@@ -68,7 +68,7 @@ body {
 
     .navbar {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
         text-align: center;
     }
 
@@ -124,4 +124,5 @@ body {
     text-justify: inter-word;
 }
 }
+
 
