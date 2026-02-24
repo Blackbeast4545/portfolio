@@ -51,6 +51,19 @@ body {
 .cert-list { list-style: none; padding: 0; }
 .cert-list li { margin-bottom: 15px; border-left: 2px solid var(--accent); padding-left: 20px; font-size: 1rem; }
 .card-divider { opacity: 0.1; margin: 30px 0; border: none; height: 1px; background: white; }
+.summary-card p {
+    text-align: justify;
+    line-height: 1.8;
+}
+/* Specific Mobile Adjustments */
+/* ============================= */
+/* MOBILE RESPONSIVE FIX */
+/* ============================= */
+
+/* ============================= */
+/* CLEAN MOBILE FIX */
+/* ============================= */
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -70,45 +83,45 @@ body {
     }
 
     .hero {
-        min-height: auto;
         padding: 60px 0;
-        text-align: center;
+        text-align: left;   /* 🔥 changed from center */
     }
 
     .hero h1 {
-        font-size: 2.2rem;   /* was 5rem */
+        font-size: clamp(2rem, 8vw, 2.8rem);
         line-height: 1.2;
+        text-align: left;   /* 🔥 keep heading left */
     }
 
     .hero p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        text-align: left;
     }
 
     .summary-card {
-        padding: 25px;
+        padding: 20px;
+        text-align: left;  /* 🔥 paragraph aligned properly */
     }
 
-    .card {
-        padding: 25px;
-        border-radius: 20px;
+    .summary-card p {
+        line-height: 1.7;
     }
 
-    .section-label {
-        font-size: 0.8rem;
-        letter-spacing: 3px;
-    }
-
-    .skills-grid {
-        gap: 20px;
-    }
-
-    .skill-tags li {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+    .hero-btn {
+        display: inline-block;
+        margin-top: 25px;
     }
 
     .content-wrapper {
         padding: 0 20px;
     }
 
+    .card {
+        padding: 25px;
+    }
+    .summary-card p {
+    text-align: justify;
+    text-justify: inter-word;
 }
+}
+
