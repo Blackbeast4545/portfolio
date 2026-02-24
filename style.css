@@ -51,3 +51,64 @@ body {
 .cert-list { list-style: none; padding: 0; }
 .cert-list li { margin-bottom: 15px; border-left: 2px solid var(--accent); padding-left: 20px; font-size: 1rem; }
 .card-divider { opacity: 0.1; margin: 30px 0; border: none; height: 1px; background: white; }
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .action-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;   /* was 5rem */
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .summary-card {
+        padding: 25px;
+    }
+
+    .card {
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .section-label {
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+
+    .skills-grid {
+        gap: 20px;
+    }
+
+    .skill-tags li {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .content-wrapper {
+        padding: 0 20px;
+    }
+
+}
